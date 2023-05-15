@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import "../showPage/showPage.css";
 
 const ShowPage = () => {
     const { id } = useParams();
@@ -26,20 +27,25 @@ const ShowPage = () => {
   }, [id]);
 
   return (
-    <div>
+    <div id="container">
     {collectionItem ? (
-      <div>
-        <img src={collectionItem.links[0].href} alt={collectionItem.title} />
-        <h2>{collectionItem.data[0].title}</h2>
-        <p>{collectionItem.data[0].location}</p>
-        <p>{collectionItem.data[0].photographer}</p>
-        <p>{collectionItem.data[0].description}</p>
-        <p>{collectionItem.data[0].keywords.join(', ')}</p>
-        <p>{collectionItem.data[0].date_created}</p>
-        <button onClick={() => window.history.back()}>Back</button>
+      <div id="item-container">
+        <h2 id="itemTitle">{collectionItem.data[0].title}</h2>
+        <img id="imageItem" src={collectionItem.links[0].href} alt={collectionItem.title} />
+        <span>photographed at</span>
+        <p id="itemLocation">{collectionItem.data[0].location}</p>
+        <span>by</span>
+        <p id="itemPhotographer">{collectionItem.data[0].photographer}</p>
+       <span>Description:</span>
+       <p id="itemDescriptiom">{collectionItem.data[0].description}</p>
+        <span>Keywords:</span>
+        <p id="itemKeywords">{collectionItem.data[0].keywords.join(', ')}</p>
+        <span>Date:</span>
+        <p id="itemDate">{collectionItem.data[0].date_created.toLocaleString('en-GB').slice(0,10)}</p>
+        <button id="backBtn" onClick={() => window.history.back()}>Back</button>
       </div>
     ) : (
-        <div>Loading...</div>
+        <div id="loading">Loading...</div>
     )}
     </div>
     )
