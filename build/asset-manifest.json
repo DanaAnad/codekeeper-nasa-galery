@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6915a32b.css",
+    "main.js": "/static/js/main.2943d93d.js",
+    "static/media/nasa.jpeg": "/static/media/nasa.394ba315b3a983753fe9.jpeg",
+    "index.html": "/index.html",
+    "main.6915a32b.css.map": "/static/css/main.6915a32b.css.map",
+    "main.2943d93d.js.map": "/static/js/main.2943d93d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6915a32b.css",
+    "static/js/main.2943d93d.js"
+  ]
+}
