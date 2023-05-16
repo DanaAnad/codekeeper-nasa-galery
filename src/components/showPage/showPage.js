@@ -8,16 +8,12 @@ const ShowPage = () => {
   const [collectionItem, setCollectionItem] = useState(null);
 
   useEffect(() => {
-    console.log('Idd::', id);
     const fetchCollection = async () => {
       try {
         if(id){
         const response = await axios.get(`https://images-api.nasa.gov/search?nasa_id=${id}`);
-        console.log("responseeShowPg::", response); 
         const item = response.data.collection.items[0];
-        console.log("item::", item);
         setCollectionItem(item);
-        console.log("colectionItem::", collectionItem);
       }} catch (error) {
         console.error(error);
       }
