@@ -45,7 +45,7 @@ const ShowPage = () => {
         <button id="backBtn" onClick={() => window.history.back()}>Back</button>
       </div>
     ) : (
-        <div id="loading">Loading...</div>
+        <div id="loading"><span>Loading...</span></div>
     )}
     </div>
     )

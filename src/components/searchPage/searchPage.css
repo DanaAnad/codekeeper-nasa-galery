@@ -51,16 +51,29 @@
         margin:auto;
         margin-top:8px;
     }
+    #error {
+        color:red;
+        font-family: sans-serif;
+        font-size: medium;
+    }
+    #button {
+        display: flex;
+
+    }
     #subBtn {
+        display:block;
+        flex-wrap: wrap;
+        width: 70px;
+        height: 35px;
+        border-radius: 10px;
         margin-top:15px;
         margin-bottom: 15px;
-        background-color: rgb(37, 63, 216);
+        align-content: center;
+        text-align:center;
+        background-color:rgb(37, 63, 216);
+        color:white;
         border:none;
-        border-radius:10px;
-        color: white;
-        height:35px;
-        width:70px;
-        text-align: center;
+        font-size:smaller;
     }
     #subBtn:focus {
         outline: none;
@@ -99,6 +112,11 @@
         font-family: sans-serif;
         margin:0; 
     }
+    #noItems {
+        color:red;
+        font-family: sans-serif;
+        font-size: medium;
+    }
 } 
 @media (min-width:1023px){
     .container {
@@ -125,13 +143,15 @@
         margin:auto;
         margin-bottom: 10px;
         align-items: center;
-        height:30vh;
+        height:35vh;
         justify-content: center;
-        align-content: center;
+        /* align-content: center; */
         flex-wrap: wrap;
     }
     label {
-        color:white;  
+        color:white; 
+        display: flex;
+        justify-content: start;
     }
     input {
         border-radius: 15px;
@@ -149,8 +169,13 @@
         display: flex;
         flex-direction: column;
     }
+    #error {
+        color:red;
+        font-family: sans-serif;
+        font-size: large;
+    }
     #button {
-        margin-top:10px;
+        margin-top:15px;
     }
     #subBtn {
         background-color: rgb(37, 63, 216);
@@ -161,6 +186,7 @@
         width:100px;
         text-align: center;
         margin-bottom:7px;
+        margin-top:5px;
     }
     #subBtn:focus {
         outline: none;
@@ -191,6 +217,11 @@
         color:grey;
         font-family: sans-serif;
         margin:0;
+    }
+    #noItems {
+        color:red;
+        font-family: sans-serif;
+        font-size: larger;
     }
 }
 @media (min-width:787px) and (max-width: 1022px) {
@@ -242,6 +273,11 @@
         display: flex;
         flex-direction: column;
     }
+    #error {
+        color:red;
+        font-family: sans-serif;
+        font-size: large;
+    }
     #button {
         margin-top:10px;
     }
@@ -287,6 +323,11 @@
         font-family: sans-serif;
         margin:0;
     } 
+    #noItems {
+        color:red;
+        font-family: sans-serif;
+        font-size: larger;
+    }
 }
 
   

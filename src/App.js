@@ -12,7 +12,7 @@ function App() {
             <Route exact path="/" Component={SearchPage}/>
             <Route path="/show/:id" Component={ShowPage}/>
           </Routes>
-    </Router>
+        </Router>
     </div>
   );
 }
